@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rupesh Makwana - Ultra-Endurance Runner</title>
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <style>
+
+.home-section {
+  height: 100vh;
+  background: url('rupesh-banner.jpg') no-repeat center center/cover;
+  background-image: url("https://chhatrashakti.in/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-20-at-14.48.16.jpeg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  position: relative;
+}
+
+.home-content {
+  background: rgba(0, 0, 0, 0.5); /* optional dark overlay */
+  padding: 2rem;
+  margin-bottom: 350px;
+  border-radius: 15px;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-section {
+  padding: 4rem 1rem;
+  background: #f5f5f5;
+}
+
+.about-section, .achievement-section, .training-section, .media-section, .gallery-section h2,  h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding: 0 1rem;
+  }
+}
+
+.achievements-section {
+  background: #ffffff;
+  padding: 4rem 1rem;
+}
+
+.achievements-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.achievement {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+}
+
+.achievement-img {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.achievement-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.achievement-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.achievement-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.award {
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #EE4B2B;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .achievement {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .achievement-text {
+    padding: 0 1rem;
+  }
+}
+
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  background: #EE4B2B; /* Heart red */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d43b20;
+}
+
+    /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+.training-section {
+  background-color: #f9f9f9;
+  padding: 4rem 1rem;
+}
+
+.training-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.training-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.training-img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.training-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.training-text ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+.training-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+.training-text .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #EE4B2B;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.training-text .btn:hover {
+  background-color: #c9371f;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .training-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .training-text {
+    padding: 0 1rem;
+  }
+}
+
+
+
+.media-carousel {
+    /* background-color: gray; */
+  padding: 2rem 1rem;
+  /* padding: 30px; */
+  /* background: #f5f5f5; */
+  overflow: hidden;
+  text-align: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px; /* spacing between images */
+  animation: scroll-loop 25s linear infinite;
+  width: max-content;
+}
+
+.carousel-track img {
+  width: 300;
+  height: 350px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  object-fit: cover;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Loop animation */
+@keyframes scroll-loop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Modal full image view */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  display: block;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallery-section {
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.gallery-track {
+  display: flex;
+  /* overflow-x: 100%; */
+  scroll-behavior: smooth;
+  gap: 20px;
+  animation: scroll-left 25s linear infinite;
+}
+
+.gallery-track::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-img {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styles */
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.img-modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.img-close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Animation for infinite scroll */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.contact-section {
+  padding: 40px 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #EE4B2B;
+}
+
+.contact-info h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: black;
+  text-decoration: none;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-links a {
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.social-links a:hover {
+  background-color: gray;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="topnav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#training">Training & Coaching</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1>Rupesh Makwana</h1>
+      <h2>
+        મારો સંકલ્પ રાષ્ટ્ર પ્રથમ
+      </h2>
+      <p>𝐀𝐭𝐡𝐥𝐞𝐭𝐢𝐜𝐬 𝐂𝐨𝐚𝐜𝐡 | 𝐔𝐥𝐭𝐫𝐚 𝐑𝐮𝐧𝐧𝐞𝐫 | 𝐆𝐮𝐢𝐧𝐧𝐞𝐬𝐬 𝐖𝐨𝐫𝐥𝐝 𝐑𝐞𝐜𝐨𝐫𝐝 𝐇𝐨𝐥𝐝𝐞𝐫</p>
+      <a href="#achievements" class="btn">Learn More</a>
+    </div>
+  </section>
+  
+
+ 
+  
+
+  <section id="achievements" class="achievements-section">
+    <div class="container">
+      <h2>Achievements & Awards</h2>
+
+      <div class="achievement">
+        <img src="https://i.ibb.co/TsGtbyR/422554850-17997498737389328-4983947485904718034-n.jpg" alt="Golden Quadrilateral Record" class="achievement-img" height="250px">
+        <div class="achievement-text">
+          <h3>Guinness World Record: Indian Golden Quadrilateral Run</h3>
+          <p>In 2023, he completed the <strong>fastest run across the Indian Golden Quadrilateral</strong>, covering 6,000 KM in 88 days, 1 hour, and 28 seconds, officially recognized by the Guinness World Records.</p>
+          <p class="award">🥇 Guinness World Record Certificate</p>
+        </div>
+      </div>
+
+      <div class="achievement">
+        <img src="https://i.ibb.co/4nqG6tLX/IMG-20250428-WA0004.jpg" alt="375 KM Run" class="achievement-img" height="250px">
+        <div class="achievement-text">
+          <h3>In Salute India Award</h3>
+          <p><strong>Rupesh Makwana</strong> was honored with the prestigious <strong>Salute India Award</strong> in recognition of his exceptional contributions to society, physical endurance, and motivational influence.</p>
+          <p>This award celebrates his commitment to pushing the human spirit through ultra-marathon running and inspiring thousands of youth across India with his journey of discipline and purpose.</p>
+          <p class="award">🏆 National Honor | Inspiring the Nation</p>
+        </div>
+      </div>
+      
+  
+
+  
+      <div class="achievement">
+        <img src="https://i.ibb.co/Ndn4vzF2/IMG-20250428-WA0002.jpg" alt="Gujarat Ratna Award" class="achievement-img" height="250px">
+        <div class="achievement-text">
+          <h3>🏅 Gujarat Ratna Award</h3>
+          <p><strong>Rupesh Makwana</strong> was awarded the prestigious <strong>Gujarat Ratna Award</strong> for his extraordinary contributions to ultra-endurance running and for inspiring countless youth across Gujarat through his discipline and determination.</p>
+          <p class="award">🏆 State Honor | Excellence in Sports & Motivation</p>
+        </div>
+      </div>
+      
+  
+    </div>
+  </section>
+  
+
+  <section id="training" class="training-section">
+    <div class="container">
+      <h2>Training & Coaching</h2>
+  
+      <div class="training-content">
+        <img src="https://i.ibb.co/QZwF35d/467696225-18360705946190127-513745199916.jpg" alt="Rupesh Makwana Coaching" class="training-img">
+        <div class="training-text">
+          <p><strong>Rupesh Makwana</strong> offers specialized coaching programs focused on ultra-endurance, marathon, and mental strength training.</p>
+          <ul>
+            <li>🏃‍♂️ Personalized ultra-running training plans</li>
+            <li>🧠 Mental resilience and focus-building sessions</li>
+            <li>📅 Regular fitness workshops and camps</li>
+            <li>💬 One-on-one coaching and mentorship</li>
+          </ul>
+          <p>With years of experience and world records under his belt, Rupesh helps athletes push boundaries and achieve peak performance.</p>
+          <a href="#contact" class="btn">Join Coaching Program</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="media" class="media-carousel">
+    <h1>Media</h1>
+    <div class="carousel-track" id="carousel-track">
+      <img src="https://i.ibb.co/kVwZQ72N/Whats-App-Image-2025-04-28-at-13-27-58-6c5d24a9.jpg" alt="Media 1">
+      <img src="https://i.ibb.co/84bXRwmT/Whats-App-Image-2025-04-28-at-13-26-38-f4558151.jpg" alt="Media 2">
+      <img src="https://i.ibb.co/m7K84CG/Whats-App-Image-2025-04-28-at-13-26-38-dd00981b.jpg" alt="Media 3">
+      <img src="https://i.ibb.co/Xf7HmLGT/IMG-20250428-WA0018.jpg" alt="Media 4">
+      <img src="https://i.ibb.co/RTDFvpLb/IMG-20250428-WA0017.jpg" alt="Media 5">
+      <img src="https://i.ibb.co/9H3rPj7P/IMG-20250428-WA0016.jpg" alt="Media 6">
+      <img src="https://i.ibb.co/kPHhWt5/IMG-20250428-WA0014.jpg" alt="Media 7">
+      <img src="https://i.ibb.co/Z1B55wKz/IMG-20250428-WA0013.jpg" alt="Media 8">
+      <img src="https://i.ibb.co/8DMXNkXb/IMG-20250428-WA0011.jpg" alt="Media 9">
+      <img src="https://i.ibb.co/1fPXhSZV/IMG-20250428-WA0012.jpg" alt="Media 10">
+    </div>
+  </section>
+  
+  <!-- Modal Zoom -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+  
+
+  
+  
+
+  
+  <section id="gallery" class="gallery-section">
+    <h2 style="text-align: center;">Gallery</h2>
+    <div class="gallery-track" id="gallery-track">
+      <img src="https://i.ibb.co/8LzwssKR/Whats-App-Image-2025-05-08-at-14-52-52-52669a9d.jpg" class="gallery-img" />
+      <img src="https://i.ibb.co/nMwssssc/1746700740259.jpg" class="gallery-img" />
+      <img src="https://i.ibb.co/JWh1SGtR/438742908-2162195054139476-9100813510987.jpg" class="gallery-img" />
+      <img src="https://i.ibb.co/GQwXSfFv/Whats-App-Image-2025-05-08-at-14-52-51-f702287a.jpg" class="gallery-img" />
+      <img src="https://i.ibb.co/yn2cxCY2/Whats-App-Image-2025-05-08-at-14-52-48-c21a1103.jpg" class="gallery-img" />
+      <img src="https://i.ibb.co/MDc1yhb8/Whats-App-Image-2025-05-08-at-14-52-48-c2588da3.jpg" class="gallery-img" />
+      <img src="https://i.ibb.co/nqQp79h9/Whats-App-Image-2025-05-08-at-14-52-49-edfde264.jpg" class="gallery-img" />
+    </div>
+  
+    <!-- Modal -->
+    <div id="img-modal" class="img-modal">
+      <span class="img-close" id="img-close">&times;</span>
+      <img class="img-modal-content" id="img-preview">
+    </div>
+  </section>
+  
+
+  
+  
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="https://i.ibb.co/DgP4pJf1/IMG-20250428-WA0009.jpg" alt="Rupesh Makwana" class="about-img">
+        <div class="about-text">
+          <p><strong>Rupesh Makwana</strong> is an Indian ultra-endurance runner and coach, renowned for his remarkable achievements in long-distance running. Born on <strong>March 11, 1993</strong>, in Ahmedabad, Gujarat, he has pushed the limits of human endurance.</p>
+  
+          <p>In <strong>August 2023</strong>, he achieved the <em>world record</em> for the longest nonstop marathon by an individual (male), running <strong>375 km over 75 hours</strong> in Ahmedabad, Gujarat, India.</p>
+  
+          <p>In <strong>2023</strong>, he earned a <strong>Guinness World Record</strong> for the fastest time to travel the Indian Golden Quadrilateral on foot, covering <strong>6,000 km in 88 days</strong>.</p>
+  
+          <p>Rupesh is now a motivational figure and coach, sharing ultra-endurance tips, training guidance, and mental fitness strategies to inspire athletes globally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <img src="https://i.ibb.co/FLCLr9bf/IMG-20250428-WA0008.jpg" alt="Rupesh Makwana" class="contact-img">
+      <div class="contact-info">
+        <h3>Rupesh Makwana</h3>
+        <p><strong>Phone:</strong> <a href="tel:+91 9723246189">+91 9723246189</a></p>
+        <p><strong>Email:</strong> <a href="mailto:rupeshbhartiy93@gmail.com">rupeshbhartiy93@gmail.com</a></p>
+        <div class="social-links">
+          <a href="https://youtube.com/@rupeshmakwana-o3l?si=YJIeSf9Py9tqnnmn" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube" width="24" height="24">
+          </a>
+          <a href="https://www.instagram.com/nation_first_fitness_club?igsh=NHJkZDc5dmd1emN1" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="24" height="24">
+          </a>
+          <a href="https://www.threads.net/@yourprofile" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/threads.svg" alt="Threads" width="24" height="24">
+          </a>
+          <a href="https://www.facebook.com/share/19Zgdc7LHM/" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer>
+    <div style="max-width: 1200px; margin: auto; padding: 2rem 1rem;">
+      <h3 style="margin-bottom: 1rem;">Connect with Rupesh Makwana</h3>
+      <p>𝐀𝐭𝐡𝐥𝐞𝐭𝐢𝐜𝐬 𝐂𝐨𝐚𝐜𝐡 | 𝐔𝐥𝐭𝐫𝐚 𝐑𝐮𝐧𝐧𝐞𝐫 | 𝐆𝐮𝐢𝐧𝐧𝐞𝐬𝐬 𝐖𝐨𝐫𝐥𝐝 𝐑𝐞𝐜𝐨𝐫𝐝 𝐇𝐨𝐥𝐝𝐞𝐫</p>
+  </footer>
+
+
+  <footer style="background-color: black; color: white;">
+    © 2025 Rupesh Makwana. All rights reserved.
+  </footer>
+</body>
+<script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const close = document.getElementsByClassName("close")[0];
+  
+    document.querySelectorAll(".carousel-track img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+      });
+    });
+  
+    close.onclick = () => {
+      modal.style.display = "none";
+    };
+  
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+
+//     const modal = document.getElementById("img-modal");
+//   const modalImg = document.getElementById("img-preview");
+//   const closeBtn = document.querySelector(".img-close");
+
+
+const galleryTrack = document.getElementById('gallery-track');
+const imgs = galleryTrack.querySelectorAll('.gallery-img');
+
+// Duplicate images for infinite scroll
+imgs.forEach((img) => {
+  const clone = img.cloneNode(true);
+  galleryTrack.appendChild(clone);
+});
+
+// Pause animation on hover or manual scroll
+let isHovered = false;
+
+galleryTrack.addEventListener('mouseover', () => {
+  galleryTrack.style.animationPlayState = 'paused';
+});
+
+galleryTrack.addEventListener('mouseout', () => {
+  galleryTrack.style.animationPlayState = 'running';
+});
+
+// Image Modal Logic
+// const modal = document.getElementById("img-modal");
+// const modalImg = document.getElementById("img-preview");
+// const closeBtn = document.getElementById("img-close");
+
+document.querySelectorAll('.gallery-img').forEach(img => {
+  img.addEventListener('click', () => {
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  });
+});
+
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+
+// const modal = document.getElementById("imgModal");
+//   const modalImg = document.getElementById("modalImage");
+//   const closeBtn = document.getElementById("imgClose");
+
+  // Handle image click
+  document.querySelectorAll('.gallery-img, .carousel-track img').forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    });
+  });
+
+  // Close on click of close icon
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+  });
+
+  // Close on outside click
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  </script>
+  
+  
+  
+</html>
